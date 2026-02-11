@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Radheshyam Construction - Best construction company in Bhopal. 20+ years of experience in house construction and home renovation. Trusted, transparent, and on-time delivery.">
+    <title>Radheshyam Construction | Best Builder in Bhopal</title>
+    
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- CSS VARIABLES & RESET --- */
+        :root {
+            --primary-blue: #0f172a; /* Deep Trust Blue */
+            --secondary-blue: #1e293b; /* Lighter Navy */
+            --accent-orange: #f97316; /* Strong CTA Orange */
+            --accent-orange-hover: #ea580c;
+            --text-dark: #334155;
+            --text-light: #94a3b8;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --border-color: #e2e8f0;
+            --max-width: 1200px;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-white);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--primary-blue);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* --- UTILITIES --- */
+        .container {
+            width: 90%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .bg-light {
+            background-color: var(--bg-light);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-header span {
+            color: var(--accent-orange);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-dark);
+            opacity: 0.8;
+            font-size: 1.1rem;
+        }
+
+        /* --- BUTTONS --- */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-family: 'Manrope', sans-serif;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.95rem;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-orange);
+            color: white;
+            box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-orange-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(249, 115, 22, 0.5);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: white;
+            color: var(--primary-blue);
+        }
+
+        .btn-outline-dark {
+            border: 2px solid var(--primary-blue);
+            color: var(--primary-blue);
+        }
+
+        .btn-outline-dark:hover {
+            background-color: var(--primary-blue);
+            color: white;
+        }
+
+        /* --- HEADER & NAV --- */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            font-family: 'Manrope', sans-serif;
+            color: var(--primary-blue);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo i {
+            color: var(--accent-orange);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            color: var(--primary-blue);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-orange);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            cursor: pointer;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            margin-top: 80px;
+            position: relative;
+            height: 90vh;
+            min-height: 600px;
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), url('https://picsum.photos/seed/construction99/1920/1080.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 600px;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* --- FEATURES / PAIN POINTS --- */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 4px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-top: 4px solid var(--accent-orange);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--accent-orange);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        /* --- ABOUT SECTION --- */
+        .about-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .experience-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--accent-orange);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.4);
+        }
+
+        .experience-badge .years {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1;
+            display: block;
+        }
+
+        .about-content h2 {
+            margin-bottom: 20px;
+            font-size: 2.25rem;
+        }
+
+        .check-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+
+        .check-list i {
+            color: var(--accent-orange);
+        }
+
+        /* --- SERVICES SECTION --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-img {
+            height: 200px;
+            background-color: #eee;
+        }
+        
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .service-body {
+            padding: 30px;
+        }
+
+        .service-body h3 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--accent-orange);
+            font-weight: 700;
+            margin-top: 15px;
+        }
+
+        /* --- PROJECT GALLERY --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .project-item {
+            position: relative;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .project-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(transparent, rgba(15, 23, 42, 0.9));
+            padding: 20px;
+            color: white;
+            opacity: 0;
+            transition: var(--transition);
+            transform: translateY(20px);
+        }
+
+        .project-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-item:hover .project-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- TESTIMONIALS --- */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .stars {
+            color: #f59e0b;
+            margin-bottom: 15px;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .client-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+
+        /* --- FAQ SECTION --- */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            cursor: pointer;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .faq-question:hover {
+            background-color: #f8fafc;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: var(--text-dark);
+        }
+
+        .faq-item.active .faq-answer {
+            padding-bottom: 20px;
+            max-height: 200px; /* Adjust based on content */
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* --- CONTACT/CTA SECTION --- */
+        .contact-section {
+            background-color: var(--primary-blue);
+            color: white;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .contact-info {
+            background-color: var(--secondary-blue);
+            padding: 50px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .info-item i {
+            color: var(--accent-orange);
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        .contact-form-area {
+            padding: 50px;
+            color: var(--text-dark);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-orange);
+            box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #020617; /* Very Dark Blue */
+            color: #94a3b8;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-orange);
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 2.8rem; }
+            .about-wrapper { grid-template-columns: 1fr; }
+            .contact-wrapper { grid-template-columns: 1fr; }
+            .experience-badge { right: 0; }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn { display: block; }
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 30px;
+                box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+                transform: translateY(-150%);
+                transition: transform 0.3s ease-in-out;
+                z-index: 999;
+            }
+            .nav-links.active { transform: translateY(0); }
+            .hero h1 { font-size: 2.2rem; }
+            .section-header h2 { font-size: 2rem; }
+            .contact-info, .contact-form-area { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-helmet-safety"></i> Radheshyam
+            </a>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#testimonials" onclick="toggleMenu()">Reviews</a></li>
+                    <li><a href="#contact" class="btn btn-primary" onclick="toggleMenu()">Get Free Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-badges">
+                <div class="badge"><i class="fa-solid fa-check-circle"></i> 20+ Years Experience</div>
+                <div class="badge"><i class="fa-solid fa-location-dot"></i> Based in Bhopal</div>
+            </div>
+            <h1>Build Your Dream Home Without the Stress.</h1>
+            <p>Bhopal's most trusted residential construction company. We handle everything from foundation to finishing with transparent pricing and zero delays.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Get Free Consultation</a>
+                <a href="tel:+919876543210" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust/Pain Points Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card text-center">
+                    <div class="feature-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                    <h3>Transparent Pricing</h3>
+                    <p>Say goodbye to hidden costs. We provide detailed BOQs upfront so you know exactly where every rupee goes.</p>
+                </div>
+                <div class="feature-card text-center">
+                    <div class="feature-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>On-Time Delivery</h3>
+                    <p>We respect your time. Our project management ensures your home is ready when promised, no unnecessary delays.</p>
+                </div>
+                <div class="feature-card text-center">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Premium Quality</h3>
+                    <p>We use Grade-A materials and skilled labor to ensure your home stands strong for generations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section-padding">
+        <div class="container about-wrapper">
+            <div class="about-image">
+                <img src="https://picsum.photos/seed/architect/600/500.jpg" alt="Construction team working">
+                <div class="experience-badge">
+                    <span class="years">20+</span>
+                    Years of<br>Excellence
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                    <span>Why Choose Us</span>
+                    <h2>We Build Relationships, Not Just Houses</h2>
+                </div>
+                <p>At Radheshyam Construction, we understand that building a home is the biggest investment of your life. Founded in Bhopal over two decades ago, we have built a reputation for reliability, integrity, and superior craftsmanship.</p>
+                <br>
+                <p>Unlike other contractors who leave you guessing, we prioritize communication and transparency. Whether it's a 2BHK expansion or a luxury villa, our team treats your project with the utmost care.</p>
+                <br>
+                <ul class="check-list">
+                    <li><i class="fa-solid fa-circle-check"></i> ISO Certified Construction Processes</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Dedicated Site Engineer for Every Project</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 100% Satisfaction Guarantee</li>
+                </ul>
+                <br>
+                <a href="#contact" class="btn btn-outline-dark">Download Our Brochure</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span>Our Expertise</span>
+                <h2>Comprehensive Construction Services</h2>
+                <p>From laying the first brick to the final interior polish, we cover all aspects of residential construction.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://picsum.photos/seed/house1/400/300.jpg" alt="New House Construction">
+                    </div>
+                    <div class="service-body">
+                        <h3>New House Construction</h3>
+                        <p>Turnkey construction services for independent floors, duplexes, and villas in Bhopal. We handle civil work, electrical, and plumbing.</p>
+                        <a href="#contact" class="service-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://picsum.photos/seed/reno/400/300.jpg" alt="Home Renovation">
+                    </div>
+                    <div class="service-body">
+                        <h3>Home Renovation</h3>
+                        <p>Transform your old space into a modern living area. Specialized in kitchen remodeling, bathroom fitting, and structural repairs.</p>
+                        <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://picsum.photos/seed/int/400/300.jpg" alt="Interior Design">
+                    </div>
+                    <div class="service-body">
+                        <h3>Interior & Finishing</h3>
+                        <p>POP work, painting, tiling, and modular fittings. We provide the perfect finishing touches that make a house a home.</p>
+                        <a href="#contact" class="service-link">Explore Styles <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span>Our Portfolio</span>
+                <h2>Recently Completed Projects</h2>
+                <p>Take a look at some of the beautiful homes we've built across Bhopal.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="project-item">
+                    <img src="https://picsum.photos/seed/build1/600/400.jpg" alt="Modern Villa in Hoshangabad Road">
+                    <div class="project-overlay">
+                        <h3>Modern Villa</h3>
+                        <p>Hoshangabad Road, Bhopal</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="https://picsum.photos/seed/build2/600/400.jpg" alt="Luxury Duplex in Kolar">
+                    <div class="project-overlay">
+                        <h3>Luxury Duplex</h3>
+                        <p>Kolar Road, Bhopal</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="https://picsum.photos/seed/build3/600/400.jpg" alt="Traditional Home in Arera Colony">
+                    <div class="project-overlay">
+                        <h3>Traditional Home</h3>
+                        <p>Arera Colony, Bhopal</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="https://picsum.photos/seed/build4/600/400.jpg" alt="Apartment Renovation">
+                    <div class="project-overlay">
+                        <h3>Complete Renovation</h3>
+                        <p>Mahaveer Nagar, Bhopal</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="https://picsum.photos/seed/build5/600/400.jpg" alt="Commercial Building">
+                    <div class="project-overlay">
+                        <h3>Commercial Complex</h3>
+                        <p>MP Nagar, Bhopal</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="https://picsum.photos/seed/build6/600/400.jpg" alt="Farmhouse Construction">
+                    <div class="project-overlay">
+                        <h3>Luxury Farmhouse</h3>
+                        <p>Berasia Road, Bhopal</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="#contact" class="btn btn-outline-dark">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span>Testimonials</span>
+                <h2>What Our Clients Say</h2>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Building our house was stress-free thanks to Radheshyam Construction. They kept us updated at every stage and the budget was exactly as quoted. Highly recommended!"</p>
+                    <div class="client-info">
+                        <img src="https://picsum.photos/seed/face1/100/100.jpg" alt="Client" class="client-avatar">
+                        <div>
+                            <strong>sulekha pathak</strong><br>
+                            <small>Project: Villa in Kolar</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"I was worried about hidden costs, but their transparency won me over. The quality of material used is excellent. Truly the best construction company in Bhopal."</p>
+                    <div class="client-info">
+                        <img src="https://picsum.photos/seed/face2/100/100.jpg" alt="Client" class="client-avatar">
+                        <div>
+                            <strong>Dr. shanti pathak</strong><br>
+                            <small>Project: Renovation in New Market</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>"Professional team and polite staff. They delivered my 3BHK flat 2 weeks before the deadline. The finishing work is top-notch."</p>
+                    <div class="client-info">
+                        <img src="https://picsum.photos/seed/face3/100/100.jpg" alt="Client" class="client-avatar">
+                        <div>
+                            <strong>Vikram Singh</strong><br>
+                            <small>Project: Flat in Shivaji Nagar</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span>Common Questions</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is the cost per square foot in Bhopal?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The cost varies depending on the quality of materials (Economy, Standard, or Premium) and the design complexity. On average, residential construction ranges from ₹1,800 to ₹2,500 per sq. ft. for a standard finish. Contact us for a customized quote.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you provide a written contract and cost estimate?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely. We provide a detailed BOQ (Bill of Quantities) and a legally binding contract before starting any work. We believe in 100% transparency.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does it take to build a house?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For a standard 2-3 story house, construction typically takes 10-14 months depending on the size and weather conditions. We provide a strict timeline in our contract.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Lead Magnet Section -->
+    <section id="contact" class="section-padding contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span style="color: rgba(255,255,255,0.7);">Get In Touch</span>
+                <h2 style="color: white;">Start Your Construction Journey Today</h2>
+                <p style="color: rgba(255,255,255,0.8);">Fill out the form below to schedule a <strong>FREE Site Visit & Consultation</strong>. Get a preliminary cost estimate for your dream home.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p style="margin-bottom: 30px; opacity: 0.8;">Ready to build? Call us or visit our office.</p>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong><br>
+                            +91 9523946113
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong><br>
+                            ashivanipathak897@.com
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>Office</strong><br>
+                            Plot 45, Scheme No 54,<br>
+                            Vijay Nagar, Bhopal, MP 462041
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-area">
+                    <form id="leadForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" class="form-control" placeholder="e.g. Amit Verma" required>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="+91" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Project Type</label>
+                                <select class="form-control">
+                                    <option>New Construction</option>
+                                    <option>Renovation</option>
+                                    <option>Interior Design</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Location in Bhopal</label>
+                            <input type="text" class="form-control" placeholder="e.g. Kolar Road">
+                        </div>
+                        <div class="form-group">
+                            <label>Message / Requirements</label>
+                            <textarea class="form-control" rows="4" placeholder="Tell us about your dream home..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Request Free Quote</button>
+                        <p style="font-size: 0.8rem; margin-top: 15px; color: #64748b; text-align: center;">*We respect your privacy. Your information is safe with us.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="color: white; margin-bottom: 20px; display: inline-block;">
+                        <i class="fa-solid fa-helmet-safety" style="color: var(--accent-orange);"></i> Radheshyam
+                    </a>
+                    <p>Bhopal's leading construction company dedicated to turning your dream home into reality with transparency and quality.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Residential Construction</a></li>
+                        <li><a href="#">Commercial Buildings</a></li>
+                        <li><a href="#">Renovation & Remodeling</a></li>
+                        <li><a href="#">Architectural Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Lead Magnet</h4>
+                    <p>Get the "2024 Construction Cost Guide" for Bhopal.</p>
+                    <div style="margin-top: 15px; display: flex;">
+                        <input type="email" placeholder="Your Email" style="padding: 10px; border: none; border-radius: 4px 0 0 4px; width: 100%;">
+                        <button style="padding: 10px 15px; background: var(--accent-orange); border: none; color: white; border-radius: 0 4px 4px 0; cursor: pointer;">Get</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2024 Radheshyam Construction. All Rights Reserved. Designed for Excellence.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // FAQ Accordion Logic
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                
+                // Close other open items
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    if (i !== item) {
+                        i.classList.remove('active');
+                    }
+                });
+
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+
+        // Simple Form Handling (No backend connected, just visual feedback)
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.innerText;
+            
+            btn.innerText = "Request Sent!";
+            btn.style.backgroundColor = "#22c55e"; // Green color for success
+            
+            // Simulate server response
+            setTimeout(() => {
+                alert("Thank you! Our team will call you shortly to schedule your free site visit.");
+                e.target.reset();
+                btn.innerText = originalText;
+                btn.style.backgroundColor = ""; // Reset color
+            }, 1000);
+        }
+
+        // Smooth Scroll for Anchor Links (Polyfill-like behavior)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
